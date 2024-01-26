@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito:wght@200&family=Oswald:wght@200&family=Overlock+SC&family=Roboto+Condensed&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    position: relative;
+}
+#bg{
+    margin-top: 200px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-image: url(myimg.jpg);
+
+}
+#navbar{
+    display: flex;
+}
+#navList{
+    list-style: none;
+    color: white;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background: black;
+    justify-content: end;
+}
+#aboutNavbar ul{
+    justify-content: start;
+    padding-left: 0;
+}
+.navItem a,.tab{
+    padding: 0.5vw 1.5vw;
+    font-size: 1.3vw;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
+#navItemFirst{
+    flex-grow: 1;
+    padding-left: 5vw;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7vw;
+    padding: 0.6vw 5vw;
+    position: relative;
+    cursor:default;
+}
+#navItemFirst::first-letter{
+    color: rgb(238, 69, 69);
+    font-size: 2.5vw;
+}
+.navItem a::after,.tab::after{
+    content: "";
+    width: 0;
+    position: absolute;
+    left: 20%;
+    top: 40px;
+    height: 2px;
+    background-color: crimson;
+    transition: 120ms;
+} 
+ul i{
+    font-size: 30px;
+    color: white;
+    margin: 42px 56px;
+    display: none;
+
+}
+.tab::after{
+    left: 10%;
+    /* width: 100%; */
+}
+.activetab::after{
+    content: "";
+    width: 82%;
+   position: absolute;
+   left: 20%;
+   top: 40px;
+   height: 2px;
+   background-color: crimson;
+}
+.navItem a:hover,.tab:hover{
+    color: rgb(245, 91, 122);
+}
+.navItem a:hover::after,.tab:hover::after{
+   
+    content: "";
+    display: inline;
+    width: 65%;
+    position: absolute;
+    top: 40px;
+    /* left: 30%; */
+    height: 2px;
+    background-color: crimson;
+    text-decoration: underline;
+}
+#aboutNavbar ul li a:hover::after{
+    width: 82%;
+}
+#back{
+    height: 100vh;
+    position: fixed;
+    
+    
+}
+#intro{
+    position: relative;
+    color: whitesmoke;
+    margin-left: auto;
+    margin-top: 375px;
+    pointer-events: none;
+    height: 51vh;
+    width: 50vw;
+    /* background-color: red; */
+}
+#introTitle{
+    font-size: 1.5vw;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+#introName {
+    margin: 10px 0;
+    font-family: 'Inter';
+    font-size: 4vw;
+}
+#about{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* pointer-events: no; */
+    /* background-color: yellow; */
+}
+#aboutImageBox{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 30vw;
+    width: 20vw;
+    margin: 30px;
+    /* background-color: pink; */
+}
+#aboutImage{
+    height: 30vw;
+}
+#aboutDetail{
+    height: 30vw;
+    width: 50vw;
+    color: white;
+}
+#aboutDetail h1 {
+    font-size: 3.7vw;
+    margin: 10px 20px 10px 70px;
+}
+#aboutDetail p {
+    font-size: 1.5vw;
+    margin: 10px 20px 10px 70px;
+    width: 50vw;
+}
+.skills h3{
+    margin: 65px 20px 10px 70px;
+    font-size: 1.6vw; 
+    letter-spacing: 2px;
+    color: rgb(255, 111, 86);
+}
+.skills h5{
+    margin: 10px 20px 10px 70px;
+    font-size: 1.1vw; 
+    letter-spacing: 1px;
+}
+
+  
+#service h1{
+    font-size: 3.7vw;
+    font-weight: bold;
+    position: relative;
+    color: white;
+    margin-left: 10vw;
+}
+/* myservices */
+#serviceBox{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* align-items: center; */
+    color: white;
+}
+.serviceCard{
+    width: 18vw;
+    height: 350px;
+    background-color: grey;
+    margin: 2vw;
+    padding: 1.5vw;
+    border-radius: 10px;
+    transition: background-color 0.3s ;
+}
+.detailServiceCard{
+    width: 30vw;
+    background-color: rgb(151, 0, 0);
+}
+.serviceCard button{
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.serviceCard h3{
+    font-size: 1.8vw;
+}
+.serviceCard p {
+    font-size: 1.03vw;
+}
+#webDetail{
+    display: none;
+}
+#appDetail{
+    display: none;
+}
+.serviceCard i{
+    font-size: 3rem;
+}
+.serviceCard:hover{
+    background-color: rgb(245, 47, 47);
+}
+#work{
+    position: relative;
+    color: white;
+}
+#work h1{
+    font-weight: bold;
+    font-size: 3.7vw;
+    margin-left: 10vw ;
+    /* position: relative; */
+}
+#workBox{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    /* column-gap: 10; */
+    grid-template-columns: repeat(3,0.1fr);
+    /* -ms-grid-column-align: center;
+    -ms-grid-row-align: center; */
+    /* position: relative; */
+}
+/* .workCardLayer:hover{
+    height: 25rem;
+} */
+.moreWork{
+    display: none;
+}
+.workCard{
+    height: 25rem;
+    width: 18em;
+    margin: 1.8vw;
+    border-radius: 5%;
+    position: relative;
+}
+.workCard img{
+    border-radius: 5%;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s;
+}
+.workCard:hover img{
+    transform: scale(105%);
+}
+.workCardLayer{
+    height: 0;
+    width: 18em;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 5%;
+    left: 0;
+    bottom: 0;
+    /* margin: 1.8vw; */
+    background-image: linear-gradient(rgb(255 189 189 / 16%),#ff0000d6);
+    /* transition: height,transform 0.5s; */
+    transition-property: height,transform;
+    transition-duration: 0.3s;
+}
+.workCardLayer h4{
+    margin: 2px;
+    font-size: 1.5rem;
+}
+.workCardLayer p{
+    margin: 0;
+    text-align: center;
+}
+.workCardLayer a{
+    margin-top: 5px;
+    padding-top: 10px;
+    height: 30px;
+    width: 40px;
+    background-color: white;
+    text-align: center;
+    border-radius: 100%;
+    color: rgb(255, 25, 25);
+}
+.workCard:hover .workCardLayer{
+    height: 100%;
+    overflow: visible;
+    transform: scale(105%);
+}
+#seeMore{
+    margin: auto;
+    display: block;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 7px;
+    color: white;
+    /* height: 10px; */
+    padding: 10px 20px;
+    font-size: 15px;
+    transition: background-color 0.5s;
+    
+}
+#seeMore:hover{
+    background-color: rgba(170, 98, 80, 0.89);
+    cursor: pointer;
+}
+#contact{
+    display: flex;
+    width: 100%;
+    /* padding: 2%; */
+    margin: 4% 0 2% 0;
+}
+#contactBoxOne,#contactBoxTwo{
+    width: 50%;
+    display: flex;
+    color: white;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    position: relative;
+    height: 50vh;
+    padding: 5rem 10rem 0 5rem;
+    /* background-color: yellow; */
+}
+#contactBoxOne{
+    padding-left: 10vw;
+}
+#contactBoxOne h3{
+    font-size: 5rem;
+    margin: 2.5%;
+}
+#email,#mobile,#other a i{
+    font-size: 1.5rem;
+    /* margin: 0 2.5%; */
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    /* height: 6vh; */
+    color: white;
+    margin-left: 2.5%;
+}
+#email p:hover,#mobile p:hover{
+    /* color: rgb(72, 72, 185);
+    text-decoration: underline; */
+    cursor: pointer;
+}
+#email i,#mobile i,#other  a i{
+    font-size: 2rem;
+    margin-right: 1.5%;
+    display: inline;
+}
+#email i,#mobile i{
+    color: red;
+}
+#other  a i{
+    margin-right: 0;
+}
+#other a i:hover{
+    color: cornflowerblue;
+    cursor: pointer;
+}
+#other {
+    margin-left: 5%;
+}
+#other a{
+    text-decoration: none;
+    color: white;
+}
+
+#nameBox,#emailBox{
+    height: 5%;
+    margin: 2.5%;
+    width: 30vw;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgb(44, 44, 44);
+}
+#msgBox{
+    background-color: rgb(44, 44, 44);
+    height: 45%;
+    margin: 2.5%;
+    width: 30vw;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+#msgBox::placeholder{
+position: absolute;
+top: 10px;
+left: 10px;
+}
+#submit,#cv{
+    /* height: 2vh; */
+    width: fit-content;
+    padding: 12px 48px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    margin: 10% 0 0 2.5%;
+    font-size: 15px;
+    background-color: red;
+    transition: background-color 0.3s;
+}
+#cv{
+    margin: 8% 5%;
+    text-decoration: none;
+}
+
+#submit:hover,#cv:hover{
+    background-color: rgb(131, 0, 0);
+    /* pointer-events: ; */
+    cursor: pointer;
+}
+footer{
+    /* margin: auto; */
+    /* padding: auto; */
+    font-size: 1.3rem;
+    display: block;
+    justify-content: center;
+    height: 5vh;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    background-color: rgb(44, 44, 44);
+}
