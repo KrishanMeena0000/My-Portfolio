@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: black;
-    position: relative;
+    /* z-index: 1; */
 }
 #bg{
     margin-top: 200px;
@@ -40,12 +40,13 @@ body{
     text-decoration: none;
 }
 #navItemFirst{
-    flex-grow: 1;
+    width: 20vw;
     padding-left: 5vw;
     font-family: 'Inter', sans-serif;
     font-size: 1.7vw;
     padding: 0.6vw 5vw;
     position: relative;
+    color: white;
     cursor:default;
 }
 #navItemFirst::first-letter{
@@ -62,7 +63,7 @@ body{
     background-color: crimson;
     transition: 120ms;
 } 
-ul i{
+#navbar i{
     font-size: 30px;
     color: white;
     margin: 42px 56px;
@@ -213,6 +214,7 @@ ul i{
 }
 .serviceCard p {
     font-size: 1.03vw;
+    letter-spacing: 0.5px;
 }
 #webDetail{
     display: none;
@@ -349,8 +351,8 @@ ul i{
 #contactBoxOne{
     padding-left: 10vw;
 }
-#contactBoxOne h3{
-    font-size: 5rem;
+#contactBoxOne h1{
+    font-size: 3.7vw;
     margin: 2.5%;
 }
 #email,#mobile,#other a i{
@@ -450,6 +452,8 @@ footer{
     justify-content: center;
     align-items: center;
     color: white;
+    letter-spacing: 0.5px;
+    font-family: 'Courier New', Courier, monospace;
     position: relative;
     background-color: rgb(44, 44, 44);
 }

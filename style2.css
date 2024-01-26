@@ -1,35 +1,164 @@
-@media screen and (max-width: 1024px ) and (min-width: 768px) {
+@media  screen and (max-width: 768px) {
     #bg{
         background-image: url(smallimg.jpg);
-        /* height: 100vh; */
-        width: 70vw;
-        position: fixed;
+        height: 100%;
+        width: 100%;
+        /* position: fixed; */
         background-repeat: no-repeat;
         background-size: cover;
     }
-  
-}
-@media screen and (max-width: 768px) {
-    #bg{
-        background-image: url(smallimg.jpg);
-        /* height: 75vh; */
-        width: 100%;
-        position: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
+
+    #navList{
+        flex-direction: column;
+        height: 100vh;
+        background-color: red;
+        justify-content: flex-start;
+        width: 40%;
+        align-items: flex-start;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 8rem 0;
+display: none;
+    }
+    #navItemFirst{
+        width: 57vw;
+        font-size: 5vw;
+        
+        
+    }
+    #navItemFirst::first-letter{
+        /* color: rgb(238, 69, 69); */
+        font-size: 10vw;
+    }
+    .navItem{
+        padding: 3vw;
     }
     .navItem a{
+       
+        font-size: 5vw;
+       
+    }
+    #navbar i{
+        display: inline-block;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        left: 78%;
+        
+    }
+    #intro{
+        margin-top: 22rem;
+        margin-left: 5vw;
+        height: 30vh;
+        width: 100%;
+    }
+    #introTitle{
+        font-size: 5vw;
+    }
+    #introName {
+        
+        font-size: 7vw;
+    }
+    #aboutImageBox{
+        height: 45vh;
+        width: 90%;
+        margin: 30px;
+        /* background-color: pink; */
+    }
+    #aboutImage{
+        border-radius: 25px;
+        height: 100%;
+        /* margin: 0 10vw; */
+        width: 100%;
+    }
+    #about{
         flex-direction: column;
     }
-    .menu{
-        /* display: block; */
+    #aboutDetail{
+        height: 65%;
+        width: 100%;
+    }
+    #aboutDetail h1{
+        font-size: 4rem;
+        margin-left: 20px;
+    }
+    #aboutDetail p{
+        font-size: larger;
+        width: 80%;
+    }
+    .skills h3{
+        font-size: 2rem;
+        margin-left: 50px;
+    }
+    .skills h5{
+        font-size: large;
+        margin-left: 70px;
+
+    }
+    #service h1{
+        font-size: 4rem;
+        margin-left: 20px;
     }
     #serviceBox{
-        flex-flow: wrap;
-        height: 180px;
+        flex-flow: column;
+        align-items: center;
+        
+        /* height: 180px; */
     }
     /* #workBox{
         flex-wrap: wrap;
     } */
-  
+    .serviceCard{
+        height: 50%;
+        width: 50%;
+        padding: 2rem;
+    }
+    .detailServiceCard{
+        width: 50%;
+    }
+    .serviceCard h3{
+font-size: 2rem;
+margin: 10px 0px;
+    }
+    .serviceCard i{
+font-size: 2rem;
+    }
+    .serviceCard p{
+font-size: 0.8rem;
+    }
+    #workBox{
+        grid-template-columns: repeat(1,0.1fr);
+        gap: 10px;
+    }
+    #work h1{
+        font-size: 4rem;
+    }
+    #seeMore{
+        margin: 5% auto;
+    }
+#contact{
+    flex-direction: column;
+}
+#contactBoxOne,#contactBoxTwo{
+    width: 100%;
+    /* margin-bottom: 10px; */
+}
+#contactBoxOne h1{
+    font-size: 4rem;
+}
+#contactBoxTwo{
+    padding: 30px;
+}
+#nameBox,#emailBox,#msgBox{
+    width: 80%;
+    margin-left: 2.5%;
+}
+#submit{
+    margin: 15px;
+}
+footer{
+    font-size: 0.8rem;
+    width: 100%;
+}
 }
