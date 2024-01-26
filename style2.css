@@ -127,6 +127,10 @@ font-size: 2rem;
     .serviceCard p{
 font-size: 0.8rem;
     }
+    #work{
+        width: 100%;
+
+    }
     #workBox{
         grid-template-columns: repeat(1,0.1fr);
         gap: 10px;
