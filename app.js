@@ -49,6 +49,14 @@ appButton.addEventListener("click", function() {
         }catch(e){
             console.log(e);
         }
+    });
+    let menu = document.querySelector("#menu");
+    // let cross = document.querySelector("#cross");
+    menu.addEventListener('click',function(){
+        let navList = document.querySelector("#navList");
+        navList.style.display = "flex";
+        menu.style.display="none";
+        // cross.style.display = "inline-block";
     })
     
     }   
